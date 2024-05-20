@@ -41,8 +41,8 @@ export default function InputForm() {
 
     startTransition(() => {
       Login(data).then((message) => {
-        setError(message.error || null);
-        setSuccess(message.success || null);
+        setError(message?.error || null);
+        setSuccess(message?.success || null);
       });
     });
   }
